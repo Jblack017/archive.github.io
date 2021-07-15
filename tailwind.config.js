@@ -49,6 +49,9 @@ module.exports = {
         DEFAULT: "#fd46fd",
         dark: "#b131b1",
       },
+      white: {
+        DEFAULT: "#ffffff",
+      },
     },
   },
   variants: {
