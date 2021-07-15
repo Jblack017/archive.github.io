@@ -1,9 +1,10 @@
 import "./App.css";
+import Landing from "./pages/landing/Landing";
 
 function App() {
   return (
     <div className='App'>
-      <header className='text-2xl'>Hello World</header>
+      <Landing />
     </div>
   );
 }
