@@ -20,6 +20,8 @@ export default function Header({ setBodyContent }) {
     "Go Love Yourself!",
   ];
 
+  const buttons = ["Home", "Projects", "Blogs", "Hobbies"];
+
   const setTitle = () => {
     if (titleIndex === titles.length - 1) {
       setTitleIndex(0);
@@ -32,6 +34,21 @@ export default function Header({ setBodyContent }) {
 
   const handleNavClick = e => {
     setBodyContent(e.target.value);
+  };
+
+  const renderButtons = () => {
+    return buttons.map(button => {
+      return (
+        <button
+          className='font-extrabold tracking-widest hover:text-primary focus:text-primary'
+          onClick={handleNavClick}
+          value={button.toLowerCase()}
+          key={button}
+        >
+          {button}
+        </button>
+      );
+    });
   };
 
   return (
@@ -51,34 +68,7 @@ export default function Header({ setBodyContent }) {
         </p>
       </h4>
       <nav className='w-max mx-auto px-2 text-secondary xs:text-primary-dark font-ShadowsIntoLight space-x-7 underline backdrop-filter backdrop-saturate-150 backdrop-opacity-70 rounded-3xl'>
-        <button
-          className='font-extrabold tracking-widest'
-          onClick={handleNavClick}
-          value='home'
-        >
-          Home
-        </button>
-        <button
-          className='font-extrabold tracking-widest'
-          onClick={handleNavClick}
-          value='projects'
-        >
-          Projects
-        </button>
-        <button
-          className='font-extrabold tracking-widest'
-          onClick={handleNavClick}
-          value='blogs'
-        >
-          Blogs
-        </button>
-        <button
-          className='font-extrabold tracking-widest'
-          onClick={handleNavClick}
-          value='hobbies'
-        >
-          Hobbies
-        </button>
+        {renderButtons()}
       </nav>
     </header>
   );

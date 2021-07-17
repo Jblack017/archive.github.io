@@ -28,6 +28,12 @@ module.exports = {
           "0%, 100%": { transform: "rotate(12deg)" },
           "50%": { transform: "rotate(-12deg)" },
         },
+        pulse: {
+          "0%, 100%": { transform: "scale(1)" },
+          "25%": { transform: "scale(1.05)" },
+          "50%": { transform: "scale(1.1)" },
+          "75%": { transform: "scale(1.05)" },
+        },
       },
     },
     screens: {
