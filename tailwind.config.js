@@ -18,21 +18,20 @@ module.exports = {
         "spin-slow-reverse": "spin 6s ease-in-out infinite",
         wiggle: "wiggle 2s ease-in-out infinite",
         "wiggle-reverse": "wiggle-reverse 2s ease-in-out infinite",
+        point: "point 3s 1s ease-out infinite",
       },
       keyframes: {
         wiggle: {
-          "0%, 100%": { transform: "rotate(-12deg)" },
-          "50%": { transform: "rotate(12deg)" },
+          "0%, 100%": { transform: "rotate(-14deg)" },
+          "50%": { transform: "rotate(14deg)" },
         },
         "wiggle-reverse": {
-          "0%, 100%": { transform: "rotate(12deg)" },
-          "50%": { transform: "rotate(-12deg)" },
+          "0%, 100%": { transform: "rotate(14deg)" },
+          "50%": { transform: "rotate(-14deg)" },
         },
-        pulse: {
-          "0%, 100%": { transform: "scale(1)" },
-          "25%": { transform: "scale(1.05)" },
-          "50%": { transform: "scale(1.1)" },
-          "75%": { transform: "scale(1.05)" },
+        point: {
+          "0%, 100%": { transform: "scale(1.1) translate(-2px)" },
+          "50%": { transform: "scale(1) translate(10px)" },
         },
       },
     },
