@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         ShadowsIntoLight: ['"Shadows Into Light Two"', "serif"],
         IndieFlower: ['"Indie Flower"', "open-sans"],
+        ZenLoop: ['"Zen Loop"', "cursive"],
       },
       backgroundColor: theme => ({
         primary: "#fe5e56",
@@ -19,6 +20,7 @@ module.exports = {
         wiggle: "wiggle 2s ease-in-out infinite",
         "wiggle-reverse": "wiggle-reverse 2s ease-in-out infinite",
         point: "point 3s 1s ease-out infinite",
+        jump: "jump 1s ease 2",
       },
       keyframes: {
         wiggle: {
@@ -33,16 +35,23 @@ module.exports = {
           "0%, 100%": { transform: "scale(1) translate(7px)" },
           "50%": { transform: "scale(1.1) translate(-5px)" },
         },
+        jump: {
+          "20%": { transform: "translateY(2%) scaleY(0.9)" },
+          "40%": { transform: "translateY(-100%) scaleY(1.2)" },
+          "50%": { transform: "translateY(10%) scaleY(0.8)" },
+          "70%": { transform: "translateY(-5%) scaleY(1)" },
+          "80%, 100%": { transform: "translateY(0) scaleY(1)" },
+        },
       },
     },
     screens: {
-      xs: { min: "480px", max: "639px" },
-      sm: { min: "640px", max: "767px" },
-      md: { min: "768px", max: "1023px" },
-      lg: { min: "1024px", max: "1279px" },
-      xl: { min: "1280px", max: "1535px" },
+      xs: { min: "480px" },
+      sm: { min: "640px" },
+      md: { min: "768px" },
+      lg: { min: "1024px" },
+      xl: { min: "1280px" },
       "2xl": { min: "1536px" },
-      'landscape': {'raw': '(orientation: landscape)'},
+      landscape: { raw: "(orientation: landscape)" },
     },
     colors: {
       primary: {
