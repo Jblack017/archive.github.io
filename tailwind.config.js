@@ -30,8 +30,8 @@ module.exports = {
           "50%": { transform: "rotate(-14deg)" },
         },
         point: {
-          "0%, 100%": { transform: "scale(1.1) translate(-2px)" },
-          "50%": { transform: "scale(1) translate(10px)" },
+          "0%, 100%": { transform: "scale(1) translate(7px)" },
+          "50%": { transform: "scale(1.1) translate(-5px)" },
         },
       },
     },
@@ -42,6 +42,7 @@ module.exports = {
       lg: { min: "1024px", max: "1279px" },
       xl: { min: "1280px", max: "1535px" },
       "2xl": { min: "1536px" },
+      'landscape': {'raw': '(orientation: landscape)'},
     },
     colors: {
       primary: {

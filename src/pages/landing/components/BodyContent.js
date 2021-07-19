@@ -23,5 +23,5 @@ export default function BodyContent({ bodyContent }) {
       break;
   }
 
-  return <div className='flex-1 w-auto h-2/3 my-2'>{page}</div>;
+  return <div className='flex-grow my-2 text-3xl h-full w-full justify-center items-center backdrop-filter backdrop-hue-rotate-90 rounded-3xl'>{page}</div>;
 }

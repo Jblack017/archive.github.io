@@ -7,7 +7,7 @@ export default function Landing({ seconds }) {
   const [bodyContent, setBodyContent] = useState("home");
 
   return (
-    <div className='flex-col items-center h-screen bg-retro-digital bg-center bg-cover pt-1 px-2'>
+    <div className='flex flex-col min-h-screen w-screen p-2 bg-retro-digital bg-center bg-cover'>
       <Header setBodyContent={setBodyContent} />
       <BodyContent bodyContent={bodyContent} />
       <Footer seconds={seconds} />
