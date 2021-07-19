@@ -4,10 +4,9 @@ export default function Header({ setBodyContent }) {
   const [titleIndex, setTitleIndex] = useState(0);
 
   const titles = [
-    "Full Stack Software Engineer",
+    "Software Engineer",
     "Loving Husband",
     "If you Git it, you Git it!",
-    "Stores jokes in Dada-Base",
     "Undeniably Dad",
     "Jovial Josh",
     "Plays with Python",
@@ -40,7 +39,7 @@ export default function Header({ setBodyContent }) {
     return buttons.map(button => {
       return (
         <button
-          className='font-extrabold underline tracking-widest hover:text-primary focus:text-primary'
+          className='font-extrabold underline hover:text-primary focus:text-primary'
           onClick={handleNavClick}
           value={button.toLowerCase()}
           key={button}
@@ -57,17 +56,17 @@ export default function Header({ setBodyContent }) {
         Joshua Blackham
       </h1>
       <div className='flex mt-2 justify-center font-bold'>
-        <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle-reverse'>
-        {"{"}
+        <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle-reverse landscape:text-secondary'>
+          {"{"}
         </p>
-        <p className='text-secondary text-2xl leading-relaxed font-IndieFlower'>
+        <p className='text-secondary text-2xl leading-relaxed font-IndieFlower landscape:text-primary'>
           {titles[titleIndex]}
         </p>
-        <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle'>
-        {"}"}
+        <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle landscape:text-secondary'>
+          {"}"}
         </p>
       </div>
-      <nav className='text-secondary w-max flex space-x-4 px-4  text-2xl mt-2 mx-auto xs:text-primary-dark font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-150 backdrop-opacity-70 rounded-3xl'>
+      <nav className='justify-center text-secondary-light w-max flex space-x-4 px-4 text-2xl mt-2 mx-auto xs:text-primary-dark font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 backdrop-opacity-90 rounded-3xl'>
         {renderButtons()}
       </nav>
     </header>
