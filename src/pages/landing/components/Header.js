@@ -39,7 +39,7 @@ export default function Header({ setBodyContent }) {
     return buttons.map(button => {
       return (
         <button
-          className='font-extrabold underline hover:text-primary focus:text-primary'
+          className='font-extrabold underline hover:text-secondary-dark focus:text-primary'
           onClick={handleNavClick}
           value={button.toLowerCase()}
           key={button}
@@ -50,29 +50,23 @@ export default function Header({ setBodyContent }) {
     });
   };
 
-  const renderTitle = () => {
-    return (
-      <p className='text-secondary transition-shadow animate-jump text-2xl leading-relaxed font-IndieFlower landscape:text-primary'>
-        {titles[titleIndex]}
-      </p>
-    );
-  };
-
   return (
     <header onClick={setTitle} className='flex flex-col'>
-      <h1 className='text-primary text-5xl sm:w-max sm:text-7xl mx-auto overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light'>
+      <h1 className='text-primary text-5xl overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center xs:w-2/3'>
         Joshua Blackham
       </h1>
       <div className='flex mt-2 justify-center font-bold'>
         <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle-reverse landscape:text-secondary'>
           {"{"}
         </p>
-        {renderTitle()}
+        <p className='text-secondary text-2xl leading-relaxed font-IndieFlower'>
+          {titles[titleIndex]}
+        </p>
         <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle landscape:text-secondary'>
           {"}"}
         </p>
       </div>
-      <nav className='justify-center text-primary-light w-max flex space-x-4 py-1 px-4 text-2xl mt-2 mx-auto font-ShadowsIntoLight backdrop-opacity-90 rounded-3xl backdrop-filter backdrop-hue-rotate-90'>
+      <nav className='justify-center text-black w-max flex space-x-4 px-4 text-2xl mt-2 mx-auto font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 rounded-3xl'>
         {renderButtons()}
       </nav>
     </header>

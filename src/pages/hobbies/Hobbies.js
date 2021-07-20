@@ -4,7 +4,7 @@ export default function Hobbies() {
   const [hobbiesIndex, setHobbiesIndex] = useState(0);
 
   const irameClassName =
-    "absolute place-self-center rounded-3xl my-2 p-3 h-full w-full";
+    "absolute place-self-center rounded-3xl h-full w-full border-2 border-black";
 
   const hobbies = [
     <iframe
@@ -54,7 +54,7 @@ export default function Hobbies() {
   ];
 
   return (
-    <content className='flex w-full justify-center'>
+    <content className='flex w-screen h-11/12 justify-center'>
       <button
         className='z-10 filter w-6 mr-auto bg-opacity-95 bg-primary rounded invert'
         value={hobbiesIndex}

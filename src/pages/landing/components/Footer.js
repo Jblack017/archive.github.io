@@ -5,7 +5,7 @@ import linkdinImage from "../images/andromeda-chain.png";
 
 export default function Footer({ seconds }) {
   return (
-    <footer className='flex h-12 font-ZenLoop w-full sm:w-1/2 space-x-4 py-2 mx-auto bg-white opacity-70 rounded-3xl'>
+    <footer className='flex h-12 font-ZenLoop w-full space-x-4 py-2 mx-auto bg-white opacity-70 rounded-3xl xs:w-2/3'>
       <strong className='flex-grow-0 ml-4 tracking-wider animate-point text-lg self-center'>
         Contact Me ->
       </strong>
