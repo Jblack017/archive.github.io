@@ -10,6 +10,7 @@ module.exports = {
         ShadowsIntoLight: ['"Shadows Into Light Two"', "serif"],
         IndieFlower: ['"Indie Flower"', "open-sans"],
         ZenLoop: ['"Zen Loop"', "cursive"],
+        Uchen: ['"Uchen"', "serif"],
       },
       backgroundColor: theme => ({
         primary: "#fe5e56",
