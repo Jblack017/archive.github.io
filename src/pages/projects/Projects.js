@@ -2,16 +2,59 @@ import React, { useState } from "react";
 
 export default function Projects() {
   const [projectsIndex, setProjectsIndex] = useState(0);
+  const [iFrameOpen, setIFrameOpen] = useState(false);
 
-  const projectClassName = "absolute self-center h-4/5 w-4/5";
-
-  const projectsIframe = [
-    <iframe
-      title='Destination: Mazatlan'
-      className={projectClassName}
-      src='https://blackhamjoshua.tech/4cast/'
-    ></iframe>,
-  ];
+  const renderProjectPages = () => {
+    return (
+      <>
+        {" "}
+        <iframe
+          className={
+            iFrameOpen
+              ? "absolute z-10 self-bottom w-full h-full rounded-xl self-center opacity-100"
+              : "absolute z-0 self-bottom w-full h-full rounded-xl self-center opacity-50"
+          }
+          title={projects[projectsIndex].title}
+          src={projects[projectsIndex].siteURL}
+          loading='lazy'
+        ></iframe>
+        <button
+          onClick={() => {
+            setIFrameOpen(!iFrameOpen);
+          }}
+          className='absolute z-50 w-max h-max right-8 mt-2 text-base leading-3 rounded p-1 bg-white'
+        >
+          {iFrameOpen ? "Close" : "Show"} <br></br>Iframe
+        </button>
+        <div className='absolute z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center'>
+          <h1 className='h-1/7 w-max mt-2  text-2xl md:text-5xl bg-white self-center rounded px-2 bg-opacity-100'>
+            {projects[projectsIndex].title}
+          </h1>
+          <h3 className='h-max z-0 w-full mt-auto text-base xs:text-xl xl:text-3xl bg-white  self-center rounded px-2 bg-opacity-100'>
+            {projects[projectsIndex].technologies}
+          </h3>
+          <p className='h-auto z-0 text-sm md:text-xl xl:text-3xl mt-auto text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
+            {projects[projectsIndex].description}
+          </p>
+          <nav className='w-full h-1/7 z-0 mt-auto mb-2 justify-center text-black flex text-2xl mt-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
+            <a
+              className='mx-auto underline'
+              href={projects[projectsIndex].gitHubURL}
+            >
+              GitHub Page
+            </a>
+            {"|"}
+            <a
+              className='mx-auto underline'
+              href={projects[projectsIndex].siteURL}
+            >
+              Site Link
+            </a>
+          </nav>
+        </div>
+      </>
+    );
+  };
 
   const projects = [
     {
@@ -20,13 +63,13 @@ export default function Projects() {
         "I was inspired when I crossed a p5 spirograph. I modified the calculations and tied movement to mouse location and added a change on click",
       gitHubURL: "https://github.com/Jblack017/HoverGraph",
       siteURL: "https://blackhamjoshua.tech/HoverGraph/",
-      technologies: "JavaScript & p5, HTML, CSS, GitHub Pages",
+      technologies: "JavaScript & p5, HTML, CSS",
     },
     {
       title: "4Cast",
       description:
-        "Before starting Flatiron School, a friend turned me onto FBProphet for time series data forecasting. This project uses python and flask to support the integration of FB Prophet, AlphaVantage for stock time series data, and MaterialUI for the frontend.",
-      gitHubURL: "https://github.com/Jblack017/HoverGraph",
+        "This project uses python and flask to support the integration of FB Prophet, AlphaVantage for stock time series data, and MaterialUI for the frontend.",
+      gitHubURL: "https://github.com/Jblack017/4cast",
       siteURL: "https://blackhamjoshua.tech/4cast/",
       technologies: "React, Javascript, Python, Ruby on Rails, MaterialUI",
     },
@@ -56,7 +99,7 @@ export default function Projects() {
       >
         {">"}
       </button>
-      {projectsIframe}
+      {renderProjectPages()}
     </content>
   );
 }
