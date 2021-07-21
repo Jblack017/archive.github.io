@@ -36,7 +36,7 @@ export default function Projects() {
           <p className='h-auto z-0 text-base my-auto xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
             {projects[projectsIndex].description}
           </p>
-          <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl mt-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
+          <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl m-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].gitHubURL}
