@@ -9,7 +9,7 @@ export default function Footer() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSeconds(seconds => seconds + 1);
-    }, 3000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [seconds]);
 
@@ -31,7 +31,7 @@ export default function Footer() {
           )}
         </a>
         <a className='w-1/3' href='https://github.com/Jblack017'>
-          {seconds % 3 !== 1 ? (
+          {seconds % 5 !== 0 ? (
             <img
               className='mx-auto h-8 w-1/8'
               src={githubImage}
@@ -45,7 +45,7 @@ export default function Footer() {
           className='w-1/3'
           href='https://www.linkedin.com/in/blackham~joshua/'
         >
-          {seconds % 3 !== 2 ? (
+          {seconds % 7 !== 0 ? (
             <img
               className='mx-auto h-8 w-1/8'
               src={linkdinImage}

@@ -23,6 +23,7 @@ module.exports = {
         "wiggle-reverse": "wiggle-reverse 2s ease-in-out infinite",
         point: "point 3s 1s ease-out infinite",
         jump: "jump 1s ease 2",
+        flip: "flip 2s ease-in-out 1",
       },
       keyframes: {
         wiggle: {
@@ -43,6 +44,11 @@ module.exports = {
           "50%": { transform: "translateY(10%) scaleY(0.8)" },
           "70%": { transform: "translateY(-5%) scaleY(1)" },
           "80%, 100%": { transform: "translateY(0) scaleY(1)" },
+        },
+        flip: {
+          "0%, 100%": { transform: "rotateY(0deg)" },
+          "25%, 75%": { transform: "rotateY(90deg)" },
+          "50%": { transform: "rotateY(180deg)" },
         },
       },
     },
