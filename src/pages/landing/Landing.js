@@ -10,7 +10,7 @@ export default function Landing({ seconds }) {
     <div className='flex flex-col min-h-screen w-screen p-2 bg-retro-digital bg-center bg-cover'>
       <Header setBodyContent={setBodyContent} />
       <BodyContent bodyContent={bodyContent} />
-      <Footer seconds={seconds} />
+      <Footer />
     </div>
   );
 }

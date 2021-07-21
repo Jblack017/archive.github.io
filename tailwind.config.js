@@ -11,6 +11,7 @@ module.exports = {
         IndieFlower: ['"Indie Flower"', "open-sans"],
         ZenLoop: ['"Zen Loop"', "cursive"],
         Uchen: ['"Uchen"', "serif"],
+        Landing: ['"IM Fell DW Pica SC"', "serif"],
       },
       backgroundColor: theme => ({
         primary: "#fe5e56",

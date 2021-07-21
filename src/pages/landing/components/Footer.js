@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import emailImage from "../images/envelope.png";
 import githubImage from "../images/octopus.png";
 import linkdinImage from "../images/andromeda-chain.png";
 
-export default function Footer({ seconds }) {
+export default function Footer() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(seconds => seconds + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [seconds]);
+
   return (
     <footer className='flex h-12 font-ZenLoop w-full space-x-4 py-2 mx-auto bg-white opacity-70 rounded-3xl xs:w-2/3'>
       <strong className='flex-grow-0 ml-4 tracking-wider animate-point text-lg self-center'>

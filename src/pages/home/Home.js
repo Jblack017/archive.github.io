@@ -1,7 +1,35 @@
 import React from "react";
+import Typing from "react-typing-animation";
 
 export default function Home() {
+  const phrasesArray = [
+    "Hello, My Name Is Joshua and I'll Be Your Host...",
+    "I'm a Full Stack Software Engineer with Experience in Telecom and Business Analytics...",
+    "Please take a moment to look around...",
+    "I have some really cool projects I would love for you to see...",
+    "But I only have two blogs right now, what should i write about...?",
+  ];
+
+  const AnimatedTypingComponent = () => {
+    return phrasesArray.map(phrase => {
+      return (
+        <>
+          <span>{phrase}</span>
+          <Typing.Reset count={1} delay={700} />
+        </>
+      );
+    });
+  };
+
   return (
-    <div className='flex text-3xl h-full w-full justify-center items-center backdrop-filter backdrop-hue-rotate-90 rounded-3xl'></div>
+    <div className='flex justify-center m-auto px-2 w-3/4 h-full align-center text-3xl'>
+      <Typing
+        speed={80}
+        className='bg-white border-2 mx-auto border-black p-4 rounded-md bg-opacity-50 mx-auto w-full h-full font-Landing'
+      >
+        {AnimatedTypingComponent()}
+        Contact Me Below
+      </Typing>
+    </div>
   );
 }

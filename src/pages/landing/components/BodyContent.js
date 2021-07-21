@@ -24,7 +24,7 @@ export default function BodyContent({ bodyContent }) {
   }
 
   return (
-    <div className='flex flex-grow xs:w-2/3 self-center m-1 my-4 text-3xl backdrop-filter backdrop-hue-rotate-90 rounded-3xl'>
+    <div className='flex flex-grow w-screen xs:w-2/3 self-center m-1 my-4 text-3xl backdrop-filter backdrop-hue-rotate-90 rounded-3xl'>
       {page}
     </div>
   );
