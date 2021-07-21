@@ -8,6 +8,7 @@ export default function Home() {
     "Please take a moment to look around...",
     "I have some really cool projects I would love for you to see...",
     "But I only have two blogs right now, what should i write about...?",
+    "Or maybe we could just build something together...?",
   ];
 
   const AnimatedTypingComponent = () => {
