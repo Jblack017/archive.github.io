@@ -39,7 +39,7 @@ export default function Header({ setBodyContent }) {
     return buttons.map(button => {
       return (
         <button
-          className='font-extrabold underline hover:text-secondary-dark focus:text-primary'
+          className='font-extrabold underline hover:text-white focus:text-primary'
           onClick={handleNavClick}
           value={button.toLowerCase()}
           key={button}
@@ -51,15 +51,15 @@ export default function Header({ setBodyContent }) {
   };
 
   return (
-    <header onClick={setTitle} className='flex flex-col'>
-      <h1 className='text-primary text-5xl overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center xs:w-2/3'>
+    <header onClick={setTitle} className='flex flex-col xs:w-2/3 self-center'>
+      <h1 className='text-primary text-5xl overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center '>
         Joshua Blackham
       </h1>
       <div className='flex mt-2 justify-center font-bold'>
         <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle-reverse landscape:text-secondary'>
           {"{"}
         </p>
-        <p className='text-secondary text-2xl leading-relaxed font-IndieFlower'>
+        <p className='text-secondary text-2xl leading-relaxed font-IndieFlower animate-jump'>
           {titles[titleIndex]}
         </p>
         <p className='text-primary px-2 font-ShadowsIntoLight text-3xl animate-wiggle landscape:text-secondary'>

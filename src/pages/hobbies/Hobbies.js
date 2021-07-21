@@ -56,7 +56,7 @@ export default function Hobbies() {
   return (
     <content className='flex w-screen h-11/12 justify-center'>
       <button
-        className='z-10 filter w-6 mr-auto bg-opacity-95 bg-primary rounded invert'
+        className='z-10 filter w-6 mr-auto bg-opacity-95 bg-primary rounded-l-lg invert'
         value={hobbiesIndex}
         onClick={e =>
           setHobbiesIndex(
@@ -67,7 +67,7 @@ export default function Hobbies() {
         {"<"}
       </button>
       <button
-        className='z-10 filter w-6 bg-opacity-95 bg-primary rounded invert'
+        className='z-10 filter w-6 bg-opacity-95 bg-primary rounded-r-lg invert'
         value={hobbiesIndex}
         onClick={e =>
           setHobbiesIndex(
