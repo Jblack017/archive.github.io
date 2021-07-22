@@ -14,11 +14,11 @@ export default function Footer() {
   }, [seconds]);
 
   return (
-    <footer className='flex h-12 font-ZenLoop w-full space-x-4 py-2 mx-auto bg-white opacity-70 rounded-3xl xs:w-2/3'>
-      <strong className='flex-grow-0 ml-4 tracking-wider animate-point text-lg self-center'>
+    <footer className='flex h-12 lg:h-20 font-ZenLoop w-full space-x-4 py-2 mx-auto bg-white opacity-70 rounded-3xl xs:w-2/3'>
+      <strong className='flex-grow-0 ml-4 tracking-wider animate-point text-lg lg:text-3xl self-center'>
         Contact Me ->
       </strong>
-      <div className='flex flex-grow mx-auto font-bold  tracking-wider text-xl justify-center items-center'>
+      <div className='flex flex-grow mx-auto font-bold  tracking-wider text-xl lg:text-3xl justify-center items-center'>
         <a
           className='w-1/3'
           href='mailto: blackhamjoshua@comcast.net'
@@ -27,7 +27,7 @@ export default function Footer() {
         >
           {seconds % 3 !== 0 ? (
             <img
-              className='mx-auto h-8 w-1/8'
+              className='mx-auto h-8 lg:h-16 w-1/8'
               src={emailImage}
               alt='envelope'
             ></img>
@@ -43,7 +43,7 @@ export default function Footer() {
         >
           {seconds % 5 !== 0 ? (
             <img
-              className='mx-auto h-8 w-1/8'
+              className='mx-auto h-8  lg:h-16  w-1/8'
               src={githubImage}
               alt='octopus'
             ></img>
@@ -59,7 +59,7 @@ export default function Footer() {
         >
           {seconds % 7 !== 0 ? (
             <img
-              className='mx-auto h-8 w-1/8'
+              className='mx-auto h-8  lg:h-16  w-1/8'
               src={linkdinImage}
               alt='andromeda chain'
             ></img>
