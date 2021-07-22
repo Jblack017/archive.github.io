@@ -11,7 +11,7 @@ export default function Home() {
     "Or maybe we should build something...?",
   ];
 
-  const AnimatedTypingComponent = () => {
+  const animatedPhrases = () => {
     return phrasesArray.map(phrase => {
       return (
         <>
@@ -28,8 +28,10 @@ export default function Home() {
         speed={80}
         className='bg-white border-2 mx-auto border-black p-4 rounded-md bg-opacity-50 mx-auto w-full h-full font-Landing'
       >
-        {AnimatedTypingComponent()}
+        {animatedPhrases()}
         Contact Me Below
+        <Typing.Backspace delay={700} count={5} speed={350} />
+        <strong className='absolute ml-2 animate-pointDown'> ⇓</strong>
       </Typing>
     </div>
   );

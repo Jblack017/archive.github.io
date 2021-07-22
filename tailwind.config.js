@@ -22,6 +22,7 @@ module.exports = {
         wiggle: "wiggle 2s ease-in-out infinite",
         "wiggle-reverse": "wiggle-reverse 2s ease-in-out infinite",
         point: "point 3s 1s ease-out infinite",
+        pointDown: "pointDown 3s 1s ease-out infinite",
         jump: "jump 1s ease 2",
         flip: "flip 2s ease-in-out 1",
       },
@@ -49,6 +50,10 @@ module.exports = {
           "0%, 100%": { transform: "rotateY(0deg)" },
           "25%, 75%": { transform: "rotateY(90deg)" },
           "50%": { transform: "rotateY(180deg)" },
+        },
+        pointDown: {
+          "0%, 100%": { transform: "scale(1) translateY(7px)" },
+          "50%": { transform: "scale(1.1) translateY(-5px)" },
         },
       },
     },
