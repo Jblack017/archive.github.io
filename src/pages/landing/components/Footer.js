@@ -19,7 +19,12 @@ export default function Footer() {
         Contact Me ->
       </strong>
       <div className='flex flex-grow mx-auto font-bold  tracking-wider text-xl justify-center items-center'>
-        <a className='w-1/3' href='mailto: blackhamjoshua@comcast.net'>
+        <a
+          className='w-1/3'
+          href='mailto: blackhamjoshua@comcast.net'
+          target='_blank'
+          rel='noreferrer'
+        >
           {seconds % 3 !== 0 ? (
             <img
               className='mx-auto h-8 w-1/8'
@@ -30,7 +35,12 @@ export default function Footer() {
             <p className=''>Email</p>
           )}
         </a>
-        <a className='w-1/3' href='https://github.com/Jblack017'>
+        <a
+          className='w-1/3'
+          href='https://github.com/Jblack017'
+          target='_blank'
+          rel='noreferrer'
+        >
           {seconds % 5 !== 0 ? (
             <img
               className='mx-auto h-8 w-1/8'
@@ -44,6 +54,8 @@ export default function Footer() {
         <a
           className='w-1/3'
           href='https://www.linkedin.com/in/blackham~joshua/'
+          target='_blank'
+          rel='noreferrer'
         >
           {seconds % 7 !== 0 ? (
             <img

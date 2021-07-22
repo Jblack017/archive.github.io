@@ -40,6 +40,8 @@ export default function Projects() {
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].gitHubURL}
+              target='_blank'
+              rel='noreferrer'
             >
               GitHub Page
             </a>
@@ -47,6 +49,8 @@ export default function Projects() {
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].siteURL}
+              target='_blank'
+              rel='noreferrer'
             >
               Site Link
             </a>

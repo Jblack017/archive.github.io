@@ -26,7 +26,7 @@ export default function Blogs() {
 
       return (
         <button
-          onClick={() => (window.location.href = post.clickLink)}
+          onClick={() => window.open(post.clickLink)}
           className='flex w-full h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
         >
           <img
