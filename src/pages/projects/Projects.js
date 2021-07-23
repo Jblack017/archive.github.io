@@ -86,6 +86,14 @@ export default function Projects() {
       technologies:
         "HTML, React, JavaScript, TailwindCSS, react-typing-animation ",
     },
+    {
+      title: "SnackAttack",
+      description:
+        "The theme was food, the task was to build an App, the outcome...SnackTime!!! The amazing random snack selector presented by Scooba Steve and Jblack. Enjoy! ps~submit a snack does not persist.",
+      gitHubURL: "https://github.com/Jblack017/SnackAttack",
+      siteURL: "https://blackhamjoshua.tech/SnackAttack/",
+      technologies: "HTML, React, JavaScript, Vanilla CSS",
+    },
   ];
 
   return (
