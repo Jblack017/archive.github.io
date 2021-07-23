@@ -64,7 +64,7 @@ export default function Projects() {
     {
       title: "HoverGraph",
       description:
-        "Inspired by a p5 spirograph. I modified the calculations, tied movement to mouse location, and added a change on click",
+        "Inspired by a p5 spirograph. I modified the calculations, tied movement to mouse location, and added a change on click.",
       gitHubURL: "https://github.com/Jblack017/HoverGraph",
       siteURL: "https://blackhamjoshua.tech/HoverGraph/",
       technologies: "JavaScript & p5, HTML, CSS",
@@ -72,10 +72,11 @@ export default function Projects() {
     {
       title: "4Cast",
       description:
-        "This project uses python and flask to support the integration of FB Prophet, AlphaVantage for stock time series data, and MaterialUI for the frontend.",
+        "I wanted something that would forecast time series data, so I built this for my capstone at Flatiron.",
       gitHubURL: "https://github.com/Jblack017/4cast",
       siteURL: "https://blackhamjoshua.tech/4cast/",
-      technologies: "React, Javascript, Python, Ruby on Rails, MaterialUI",
+      technologies:
+        "Python, Flask, and FB Prophet hosted on a Heroku backend, AlphaVantage for stock time series data grabs, and React with MaterialUI for the frontend.",
     },
     {
       title: "This Site",
@@ -84,7 +85,7 @@ export default function Projects() {
       gitHubURL: "https://github.com/Jblack017/jblack017.github.io",
       siteURL: "https://blackhamjoshua.tech/",
       technologies:
-        "HTML, React, JavaScript, TailwindCSS, react-typing-animation ",
+        "HTML, React, JavaScript, TailwindCSS, react-typing-animation.",
     },
     {
       title: "SnackAttack",

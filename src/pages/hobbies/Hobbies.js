@@ -3,9 +3,6 @@ import React, { useState } from "react";
 export default function Hobbies() {
   const [hobbiesIndex, setHobbiesIndex] = useState(0);
 
-  const irameClassName =
-    "absolute place-self-center rounded-3xl h-full w-full border-2 border-black filter drop-shadow-2xl";
-
   const hobbies = [
     {
       title: "Destination: Denver Zoo",
@@ -32,12 +29,14 @@ export default function Hobbies() {
     },
     {
       title: "TV Show: Big Brother",
-      description: "It's interesting to see what people do in a bubble",
+      description:
+        "It's interesting to see what people do in a box of competition",
       source: "https://en.wikipedia.org/wiki/Big_Brother_(American_TV_series)",
     },
     {
       title: "TV Show: Survivor",
-      description: "It's interesting to see what people do",
+      description:
+        "It's interesting to see what people do in a box of competition",
       source: "https://en.wikipedia.org/wiki/Survivor_(American_TV_series)",
     },
     {
@@ -68,7 +67,7 @@ export default function Hobbies() {
       </button>
       <iframe
         title={hobbies[hobbiesIndex].title}
-        className={irameClassName}
+        className='absolute place-self-center rounded-3xl h-full w-full border-2 border-black filter drop-shadow-2xl'
         src={hobbies[hobbiesIndex].source}
       ></iframe>
       <p className='absolute filter drop-shadow-2xl font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
