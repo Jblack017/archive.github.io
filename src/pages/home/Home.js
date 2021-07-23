@@ -4,7 +4,7 @@ import Typing from "react-typing-animation";
 export default function Home() {
   const phrasesArray = [
     "Hello, My Name Is Joshua and I'll Be Your Host...",
-    "I'm a Full Stack Software Engineer with Experience in Telecom, Leadership, and Business Analytics...",
+    "I'm a Full Stack Software Engineer with experience in Telecom, Leadership, and Business Analytics...",
     "Please take a moment to look around...",
     "I have some really cool projects I would love for you to see...",
     "But I only have two blogs right now, what should i write about...?",

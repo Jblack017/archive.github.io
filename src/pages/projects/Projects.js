@@ -11,8 +11,8 @@ export default function Projects() {
         <iframe
           className={
             iFrameOpen
-              ? "absolute z-10 self-bottom w-full h-full rounded-xl self-center opacity-100"
-              : "absolute z-0 self-bottom w-full h-full rounded-xl self-center opacity-50"
+              ? "absolute z-10 self-bottom w-full h-full rounded-lg self-center opacity-100"
+              : "absolute z-0 self-bottom w-full h-full rounded-lg self-center opacity-50"
           }
           title={projects[projectsIndex].title}
           src={projects[projectsIndex].siteURL}
