@@ -52,8 +52,8 @@ module.exports = {
           "50%": { transform: "rotateY(180deg)" },
         },
         pointDown: {
-          "0%, 100%": { transform: "scale(1) translateY(7px)" },
-          "50%": { transform: "scale(1.1) translateY(-5px)" },
+          "0%, 100%": { transform: "scale(1) translateY(9px)" },
+          "50%": { transform: "scale(1.1) translateY(-7px)" },
         },
       },
     },

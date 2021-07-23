@@ -39,7 +39,7 @@ export default function Header({ setBodyContent }) {
     return buttons.map(button => {
       return (
         <button
-          className='font-extrabold underline hover:text-white focus:text-primary z-10 '
+          className='font-extrabold underline hover:text-white focus:text-primary z-10 filter '
           onClick={handleNavClick}
           value={button.toLowerCase()}
           key={button}
@@ -53,12 +53,12 @@ export default function Header({ setBodyContent }) {
   return (
     <header
       onClick={setTitle}
-      className='flex flex-col z-10 xs:w-2/3 self-center'
+      className='flex flex-col z-10 xs:w-2/3 self-center '
     >
-      <h1 className='text-primary text-5xl lg:text-7xl w-max overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center '>
+      <h1 className='text-primary  text-5xl lg:text-7xl w-max overflow-visible tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center '>
         Joshua Blackham
       </h1>
-      <div className='flex mt-2 justify-center font-bold'>
+      <div className='flex mt-2 justify-center font-bold '>
         <p className='text-primary px-2 font-ShadowsIntoLight text-3xl lg:text-6xl animate-wiggle-reverse landscape:text-secondary'>
           {"{"}
         </p>
@@ -69,7 +69,7 @@ export default function Header({ setBodyContent }) {
           {"}"}
         </p>
       </div>
-      <nav className='justify-center z-10 text-black w-max flex space-x-4 px-4 lg:p-4 text-2xl lg:text-5xl mt-2 m-auto font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 rounded-3xl'>
+      <nav className='justify-center z-10 text-black w-max flex space-x-4 md:space-x-12 lg:space-x-18 px-4 lg:p-4 text-2xl lg:text-5xl mt-2 m-auto font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 rounded-3xl'>
         {renderButtons()}
       </nav>
     </header>

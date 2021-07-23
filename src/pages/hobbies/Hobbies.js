@@ -4,7 +4,7 @@ export default function Hobbies() {
   const [hobbiesIndex, setHobbiesIndex] = useState(0);
 
   const irameClassName =
-    "absolute place-self-center rounded-3xl h-full w-full border-2 border-black";
+    "absolute place-self-center rounded-3xl h-full w-full border-2 border-black filter drop-shadow-2xl";
 
   const hobbies = [
     {
@@ -54,9 +54,9 @@ export default function Hobbies() {
   ];
 
   return (
-    <div className='flex w-screen h-auto justify-center'>
+    <div className='flex w-screen h-auto justify-center filter filter drop-shadow-2xl'>
       <button
-        className='z-50 filter w-6 mr-auto bg-opacity-95 bg-primary rounded-l-lg invert'
+        className='z-50 filter w-6 mr-auto bg-opacity-95 bg-primary rounded-l-lg invert drop-shadow-2xl'
         value={hobbiesIndex}
         onClick={e =>
           setHobbiesIndex(
@@ -71,11 +71,11 @@ export default function Hobbies() {
         className={irameClassName}
         src={hobbies[hobbiesIndex].source}
       ></iframe>
-      <p className='absolute font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
+      <p className='absolute filter drop-shadow-2xl font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
         {hobbies[hobbiesIndex].description}
       </p>
       <button
-        className='z-50 filter w-6 ml-auto bg-opacity-95 bg-primary rounded-r-lg invert'
+        className='z-50 filter w-6 ml-auto bg-opacity-95 bg-primary rounded-r-lg invert drop-shadow-2xl'
         value={hobbiesIndex}
         onClick={e =>
           setHobbiesIndex(

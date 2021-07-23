@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div className='flex justify-center m-auto px-2 w-3/4 h-full align-center text-3xl lg:text-5xl'>
+    <div className='flex justify-center m-auto px-2 w-3/4 h-full align-center text-3xl lg:text-5xl drop-shadow-2xl'>
       <Typing
         speed={80}
         className='bg-white border-2 mx-auto border-black p-4 rounded-md bg-opacity-50 mx-auto w-full h-full font-Landing'
@@ -31,7 +31,7 @@ export default function Home() {
         {animatedPhrases()}
         Contact Me Below
         <Typing.Backspace delay={700} count={5} speed={350} />
-        <strong className='absolute ml-2 animate-pointDown'> ⇓</strong>
+        <strong className='absolute p-2 animate-pointDown '>⇓</strong>
       </Typing>
     </div>
   );

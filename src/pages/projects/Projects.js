@@ -36,7 +36,7 @@ export default function Projects() {
           <p className='h-auto z-0 text-base my-auto xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
             {projects[projectsIndex].description}
           </p>
-          <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl m-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
+          <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl lg:text-5xl m-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].gitHubURL}
@@ -76,6 +76,15 @@ export default function Projects() {
       gitHubURL: "https://github.com/Jblack017/4cast",
       siteURL: "https://blackhamjoshua.tech/4cast/",
       technologies: "React, Javascript, Python, Ruby on Rails, MaterialUI",
+    },
+    {
+      title: "This Site",
+      description:
+        "This was my first take at styling in TailwindCSS. Once setup, it can be very easy to inject custom styling into your components. Will use again for sure.",
+      gitHubURL: "https://github.com/Jblack017/jblack017.github.io",
+      siteURL: "https://blackhamjoshua.tech/",
+      technologies:
+        "HTML, React, JavaScript, TailwindCSS, react-typing-animation ",
     },
   ];
 
