@@ -22,18 +22,19 @@ export default function Projects() {
           onClick={() => {
             setIFrameOpen(!iFrameOpen);
           }}
-          className='absolute z-50 w-max h-max right-8 mt-4 text-base leading-3 rounded p-1 bg-white'
+          className='absolute z-50 w-min-max underline h-min-max right-8 mt-2 mr-4 bg-black text-secondary-light font-bold text-base md:text-xl leading-3 rounded p-1 bg-white'
         >
           {iFrameOpen ? "Close" : "Show"} <br></br>Iframe
         </button>
-        <div className='absolute z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center'>
-          <h1 className='h-1/7 w-max m-4  text-2xl md:text-5xl font-bold bg-white self-left rounded px-2 bg-opacity-100'>
+        <div className='absolute z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center overflow-scroll'>
+          <h1 className='h-1/7 w-max m-2 text-2xl md:text-5xl font-bold bg-white self-left rounded px-2 bg-opacity-100'>
             {projects[projectsIndex].title}
           </h1>
-          <h3 className='h-max z-0 w-full italic my-auto text-lg xs:text-xl xl:text-3xl bg-white  self-center rounded px-2 bg-opacity-100'>
+          <h3 className='h-max z-0 w-full italic my-auto text-base xs:text-xl xl:text-3xl bg-white  self-center rounded px-2 bg-opacity-100'>
+            <strong>Tech: </strong>
             {projects[projectsIndex].technologies}
           </h3>
-          <p className='h-auto z-0 text-base my-auto xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
+          <p className='h-auto z-0 text-sm my-auto xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
             {projects[projectsIndex].description}
           </p>
           <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl lg:text-5xl m-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
@@ -76,12 +77,12 @@ export default function Projects() {
       gitHubURL: "https://github.com/Jblack017/4cast",
       siteURL: "https://blackhamjoshua.tech/4cast/",
       technologies:
-        "Python, Flask, and FB Prophet hosted on a Heroku backend, AlphaVantage for stock time series data grabs, and React with MaterialUI for the frontend.",
+        "Python, Flask, and FB Prophet hosted on Heroku, AlphaVantage for stock data, MaterialUI & React Frontend.",
     },
     {
       title: "This Site",
       description:
-        "This was my first take at styling in TailwindCSS. Once setup, it can be very easy to inject custom styling into your components. Will use again for sure.",
+        "This was my first take at styling in TailwindCSS. Once setup, it can be very easy to inject custom styling into your components.",
       gitHubURL: "https://github.com/Jblack017/jblack017.github.io",
       siteURL: "https://blackhamjoshua.tech/",
       technologies:
@@ -90,7 +91,7 @@ export default function Projects() {
     {
       title: "SnackAttack",
       description:
-        "The theme was food, the task was to build an App, the outcome...SnackTime!!! The amazing random snack selector presented by Scooba Steve and Jblack. Enjoy! ps~submit a snack does not persist.",
+        "The theme was food, the task was to build an App, the outcome...SnackTime!!! Pair project presented by Scooba Steve and Jblack. Enjoy!",
       gitHubURL: "https://github.com/Jblack017/SnackAttack",
       siteURL: "https://blackhamjoshua.tech/SnackAttack/",
       technologies: "HTML, React, JavaScript, Vanilla CSS",

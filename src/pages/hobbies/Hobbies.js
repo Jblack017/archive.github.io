@@ -28,6 +28,12 @@ export default function Hobbies() {
       source: "https://magic.wizards.com/en/mtgarena",
     },
     {
+      title: "Game: Magic The Gathering",
+      description:
+        "I learned from a good friend and could still learn a ton more",
+      source: "https://www.catan.com/",
+    },
+    {
       title: "TV Show: Big Brother",
       description:
         "It's interesting to see what people do in a box of competition",
@@ -69,6 +75,7 @@ export default function Hobbies() {
         title={hobbies[hobbiesIndex].title}
         className='absolute place-self-center rounded-3xl h-full w-full border-2 border-black filter drop-shadow-2xl'
         src={hobbies[hobbiesIndex].source}
+        loading='lazy'
       ></iframe>
       <p className='absolute filter drop-shadow-2xl font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
         {hobbies[hobbiesIndex].description}
