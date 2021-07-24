@@ -17,16 +17,17 @@ export default function Projects() {
           title={projects[projectsIndex].title}
           src={projects[projectsIndex].siteURL}
           loading='lazy'
+          key={key => key + 1}
         ></iframe>
         <button
           onClick={() => {
             setIFrameOpen(!iFrameOpen);
           }}
-          className='absolute z-50 w-min-max underline h-min-max right-8 mt-2 mr-4 bg-black text-secondary-light font-bold text-base md:text-xl leading-3 rounded p-1 bg-white'
+          className='absolute z-50 border-2 drop-shadow-sm border-white w-min-max underline h-max right-8 mt-2 mr-4 text-secondary-light font-bold text-base md:text-xl rounded p-1 backdrop-filter backdrop-invert'
         >
-          {iFrameOpen ? "Close" : "Show"} <br></br>Iframe
+          {iFrameOpen ? "Dim" : "Show"} <br></br>Iframe
         </button>
-        <div className='absolute z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center overflow-scroll'>
+        <div className='absolute container z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center landscape:overflow-hidden'>
           <h1 className='h-1/7 w-max m-2 text-2xl md:text-5xl font-bold bg-white self-left rounded px-2 bg-opacity-100'>
             {projects[projectsIndex].title}
           </h1>

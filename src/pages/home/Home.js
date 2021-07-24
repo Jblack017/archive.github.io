@@ -16,7 +16,7 @@ export default function Home() {
       return (
         <>
           <span>{phrase}</span>
-          <Typing.Reset count={1} delay={700} />
+          <Typing.Reset count={1} delay={700} key={key => key + 1} />
         </>
       );
     });
