@@ -28,21 +28,26 @@ export default function Hobbies() {
       source: "https://magic.wizards.com/en/mtgarena",
     },
     {
-      title: "Game: Magic The Gathering",
-      description:
-        "I learned from a good friend and could still learn a ton more",
-      source: "https://www.catan.com/",
+      title: "Game: Bowling",
+      description: "I'd sooner get Munsoned out here in the middle of nowhere",
+      source: "https://en.wikipedia.org/wiki/Bowling",
+    },
+    {
+      title: "Destination: Blackham",
+      description: "I've not been yet, but would love to go some day",
+      source:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20028.425099582357!2d0.12653143174325276!3d51.13515014282991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df5baae89122e3%3A0x1dde24f9c6f0285a!2sBlackham%2C%20Tunbridge%20Wells%20TN3%209TT%2C%20UK!5e0!3m2!1sen!2sus!4v1627182174356!5m2!1sen!2sus",
     },
     {
       title: "TV Show: Big Brother",
       description:
-        "It's interesting to see what people do in a box of competition",
+        "It's interesting to see what people do in a box of Competition",
       source: "https://en.wikipedia.org/wiki/Big_Brother_(American_TV_series)",
     },
     {
       title: "TV Show: Survivor",
       description:
-        "It's interesting to see what people do in a box of competition",
+        "It's interesting to see what people do on an Island of Competition",
       source: "https://en.wikipedia.org/wiki/Survivor_(American_TV_series)",
     },
     {

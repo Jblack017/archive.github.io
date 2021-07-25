@@ -12,7 +12,7 @@ export default function Projects() {
           className={
             iFrameOpen
               ? "absolute z-10 self-bottom w-full h-full rounded-lg self-center opacity-100"
-              : "absolute z-0 self-bottom w-full h-full rounded-lg self-center opacity-50"
+              : "absolute self-bottom w-full h-full rounded-lg self-center opacity-50"
           }
           title={projects[projectsIndex].title}
           src={projects[projectsIndex].siteURL}
@@ -23,22 +23,26 @@ export default function Projects() {
           onClick={() => {
             setIFrameOpen(!iFrameOpen);
           }}
-          className='absolute z-50 border-2 drop-shadow-sm border-white w-min-max underline h-max right-8 mt-2 mr-4 text-secondary-light font-bold text-base md:text-xl rounded p-1 backdrop-filter backdrop-invert'
+          className={
+            iFrameOpen
+              ? "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base md:text-xl rounded bg-black text-white"
+              : "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base md:text-xl rounded bg-white text-black"
+          }
         >
-          {iFrameOpen ? "Dim" : "Show"} <br></br>Iframe
+          {iFrameOpen ? "Dim" : "Show"} Iframe
         </button>
-        <div className='absolute container z-0 font-Uchen flex leading-3 flex-col h-full w-4/5 self-center landscape:overflow-hidden'>
-          <h1 className='h-1/7 w-max m-2 text-2xl md:text-5xl font-bold bg-white self-left rounded px-2 bg-opacity-100'>
+        <div className='absolute flex flex-col font-Uchen leading-3 h-full w-4/5 self-center landscape:overflow-x-scroll'>
+          <h1 className='h-1/7 p-1 border-2 w-max my-auto text-2xl md:text-5xl font-bold bg-white self-left rounded bg-opacity-100'>
             {projects[projectsIndex].title}
           </h1>
-          <h3 className='h-max z-0 w-full italic my-auto text-base xs:text-xl xl:text-3xl bg-white  self-center rounded px-2 bg-opacity-100'>
+          <h3 className='h-max p-1 border-2 m-auto w-full italic text-base xs:text-xl xl:text-3xl bg-white  self-center rounded bg-opacity-100'>
             <strong>Tech: </strong>
             {projects[projectsIndex].technologies}
           </h3>
-          <p className='h-auto z-0 text-sm my-auto xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded px-2 bg-opacity-100'>
+          <p className='h-max p-1 border-2 m-auto text-sm xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded bg-opacity-100'>
             {projects[projectsIndex].description}
           </p>
-          <nav className='w-11/12 h-1/7 z-0 animate-flip mt-auto justify-center text-black flex text-2xl lg:text-5xl m-2 mx-auto font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
+          <nav className='w-11/12 h-1/7 p-1 border-2 m-auto animate-flip justify-center text-black flex text-2xl lg:text-5xl font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].gitHubURL}
