@@ -1,7 +1,8 @@
 {
   "name": "blackham-joshua",
+  "author": "Joshua Blackham <blackhamjoshua@comcast.net> (https://blackhamjoshua.tech/)",
   "homepage": "https://blackhamjoshua.tech",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
