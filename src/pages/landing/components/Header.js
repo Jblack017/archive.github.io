@@ -53,7 +53,7 @@ export default function Header({ setBodyContent }) {
   return (
     <header
       onClick={setTitle}
-      className='flex flex-col overflow-visible z-10 xs:w-2/3 self-center '
+      className='flex flex-col overflow-visible z-10 xs:w-2/3 self-center cursor-pointer '
     >
       <h1 className='text-primary  text-5xl lg:text-6xl w-max tracking-tighter landscape:tracking-wider text-opacity-95 font-ShadowsIntoLight font-bold rounded-full border-4 border-secondary-light self-center '>
         Joshua Blackham
