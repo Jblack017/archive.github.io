@@ -25,24 +25,24 @@ export default function Projects() {
           }}
           className={
             iFrameOpen
-              ? "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base md:text-xl rounded bg-black text-white"
-              : "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base md:text-xl rounded bg-white text-black"
+              ? "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base rounded bg-black text-white"
+              : "fixed z-50 p-1 border-2 top-2 right-7 font-bold text-base rounded bg-white text-black"
           }
         >
           {iFrameOpen ? "Dim" : "Show"} Iframe
         </button>
         <div className='absolute flex flex-col font-Uchen leading-3 h-full w-4/5 self-center landscape:overflow-x-scroll'>
-          <h1 className='h-1/7 p-1 border-2 w-max my-auto text-2xl md:text-5xl font-bold bg-white self-left rounded bg-opacity-100'>
+          <h1 className='h-1/7 p-1 border-2 w-max my-auto text-2xl md:text-3xl font-bold bg-white self-left rounded bg-opacity-100'>
             {projects[projectsIndex].title}
           </h1>
-          <h3 className='h-max p-1 border-2 m-auto w-full italic text-base xs:text-xl xl:text-3xl bg-white  self-center rounded bg-opacity-100'>
+          <h3 className='h-max p-1 border-2 m-auto w-full italic text-base xs:text-xl xl:text-2xl bg-white  self-center rounded bg-opacity-100'>
             <strong>Tech: </strong>
             {projects[projectsIndex].technologies}
           </h3>
-          <p className='h-max p-1 border-2 m-auto text-sm xs:text-xl xl:text-3xl text-left bg-white w-full self-center rounded bg-opacity-100'>
+          <p className='h-max p-1 border-2 m-auto text-sm xs:text-base xl:text-xl text-left bg-white w-full self-center rounded bg-opacity-100'>
             {projects[projectsIndex].description}
           </p>
-          <nav className='w-11/12 h-1/7 p-1 border-2 m-auto animate-flip justify-center text-black flex text-2xl lg:text-5xl font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
+          <nav className='w-11/12 h-1/7 p-1 border-2 m-auto animate-flip justify-center text-black flex text-2xl lg:text-3xl font-ShadowsIntoLight font-extrabold bg-white bg-opacity-100 rounded-3xl'>
             <a
               className='mx-auto underline'
               href={projects[projectsIndex].gitHubURL}
