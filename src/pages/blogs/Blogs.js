@@ -26,7 +26,14 @@ export default function Blogs() {
       ++count;
 
       return (
-        <Tilt gyroscope={true}>
+        <Tilt
+          gyroscope={true}
+          glareEnable={true}
+          glarePosition={"right"}
+          glareColor={"#000000"}
+          glareBorderRadius={"1rem"}
+          transitionSpeed={5000}
+        >
           <button
             onClick={() => window.open(post.clickLink)}
             className='flex w-full h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
