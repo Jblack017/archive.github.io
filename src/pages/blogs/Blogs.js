@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 export default function Blogs() {
   const posts = [
@@ -25,22 +26,24 @@ export default function Blogs() {
       ++count;
 
       return (
-        <button
-          onClick={() => window.open(post.clickLink)}
-          className='flex w-full h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
-        >
-          <img
-            className={"w-1/3 self-center rounded-2xl " + position}
-            src={post.src}
-            alt={post.title}
-          ></img>
-          <h1 className='w-1/3 h-full text-base font-bold font-Uchen self-center md:text-xl lg:text-3xl'>
-            {post.title}
-          </h1>
-          <p className='w-1/3 text-sm self-center font-Uchen md:text-xl lg:text-2xl'>
-            {post.body}
-          </p>
-        </button>
+        <Tilt gyroscope={true}>
+          <button
+            onClick={() => window.open(post.clickLink)}
+            className='flex w-full h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
+          >
+            <img
+              className={"w-1/3 self-center rounded-2xl " + position}
+              src={post.src}
+              alt={post.title}
+            ></img>
+            <h1 className='w-1/3 h-full text-base font-bold font-Uchen self-center md:text-xl lg:text-3xl'>
+              {post.title}
+            </h1>
+            <p className='w-1/3 text-sm self-center font-Uchen md:text-xl lg:text-2xl'>
+              {post.body}
+            </p>
+          </button>
+        </Tilt>
       );
     });
   };
