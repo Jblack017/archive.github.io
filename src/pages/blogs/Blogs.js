@@ -36,7 +36,7 @@ export default function Blogs() {
         >
           <button
             onClick={() => window.open(post.clickLink)}
-            className='flex w-full h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
+            className='flex w-full z-50 h-min bg-opacity-60 bg-white rounded-2xl border-primary border-2 border-opacity-75 rounded '
           >
             <img
               className={"w-1/3 self-center rounded-2xl " + position}
