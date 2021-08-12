@@ -14,10 +14,10 @@ export default function Home() {
   const animatedPhrases = () => {
     return phrasesArray.map(phrase => {
       return (
-        <>
-          <span>{phrase}</span>
-          <Typing.Reset count={1} delay={700} key={key => key + 1} />
-        </>
+        <span key={phrase}>
+          {phrase}
+          <Typing.Reset count={1} delay={700} />
+        </span>
       );
     });
   };
