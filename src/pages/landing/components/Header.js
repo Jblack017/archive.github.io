@@ -19,7 +19,7 @@ export default function Header({ setBodyContent }) {
     "Go Love Yourself!",
   ];
 
-  const buttons = ["Home", "Projects", "Blogs", "Hobbies"];
+  const buttons = ["Home", "Projects", "Blogs", "Hobbies", "Resume"];
 
   const setTitle = () => {
     if (titleIndex === titles.length - 1) {
@@ -69,7 +69,7 @@ export default function Header({ setBodyContent }) {
           {"}"}
         </p>
       </div>
-      <nav className='justify-center z-10 text-black w-max flex space-x-4 md:space-x-8 px-4 lg:p-3 text-2xl lg:text-3xl mt-2 m-auto font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 rounded-3xl '>
+      <nav className='justify-center z-10 text-black w-max flex space-x-4 md:space-x-8 px-4 lg:p-3 lg:text-3xl mt-2 m-auto font-ShadowsIntoLight font-extrabold backdrop-filter backdrop-saturate-200 rounded-3xl '>
         {renderButtons()}
       </nav>
     </header>

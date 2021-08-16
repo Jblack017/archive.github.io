@@ -3,6 +3,7 @@ import Hobbies from "../../hobbies/Hobbies";
 import Home from "../../home/Home";
 import Projects from "../../projects/Projects";
 import Blogs from "../../blogs/Blogs";
+import Resume from "../../resume/Resume";
 // import Hobbies from "../../hobbies/Hobbies";
 
 export default function BodyContent({ bodyContent }) {
@@ -20,6 +21,9 @@ export default function BodyContent({ bodyContent }) {
       break;
     case "hobbies":
       page = <Hobbies />;
+      break;
+    case "resume":
+      page = <Resume />;
       break;
   }
 

@@ -64,9 +64,9 @@ export default function Hobbies() {
   ];
 
   return (
-    <div className='flex w-screen h-auto justify-center filter filter drop-shadow-2xl'>
+    <div className='flex w-screen h-auto justify-center'>
       <button
-        className='z-50 filter w-6 mr-auto bg-opacity-95 bg-primary rounded-l-3xl invert drop-shadow-2xl'
+        className='z-50 filter w-6 mr-auto bg-opacity-95 bg-primary rounded-l-3xl invert'
         value={hobbiesIndex}
         onClick={e =>
           setHobbiesIndex(
@@ -78,11 +78,11 @@ export default function Hobbies() {
       </button>
       <iframe
         title={hobbies[hobbiesIndex].title}
-        className='absolute place-self-center rounded-3xl h-full w-full border-2 border-black filter drop-shadow-2xl'
+        className='absolute place-self-center rounded-3xl h-full w-full border-2 border-black'
         src={hobbies[hobbiesIndex].source}
         loading='lazy'
       ></iframe>
-      <p className='absolute filter drop-shadow-2xl font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
+      <p className='absolute font-Uchen tracking-wide self-end font-bold  h-max w-min-max ring-4 ring-black bg-opacity-90 rounded-full mb-4 mx-9 px-4 py-2 bg-primary ring-opacity-50 ring-offset-4 ring-offset-secondary text-sm sm:text-2xl lg:text-5xl'>
         {hobbies[hobbiesIndex].description}
       </p>
       <button
