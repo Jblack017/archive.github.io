@@ -12,6 +12,7 @@ module.exports = {
         ZenLoop: ['"Zen Loop"', "cursive"],
         Uchen: ['"Uchen"', "serif"],
         Landing: ['"IM Fell DW Pica SC"', "serif"],
+        CinzelDecorative: ["Cinzel Decorative", "cursive"],
       },
       backgroundColor: theme => ({
         primary: "#fe5e56",
