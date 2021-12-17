@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd53a8bf.chunk.css",
-    "main.js": "/static/js/main.4d7103ec.chunk.js",
-    "main.js.map": "/static/js/main.4d7103ec.chunk.js.map",
+    "main.css": "/static/css/main.3b3cdbc0.chunk.css",
+    "main.js": "/static/js/main.0cf9d56d.chunk.js",
+    "main.js.map": "/static/js/main.0cf9d56d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.998d5f0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.998d5f0b.js.map",
     "static/js/2.d527b075.chunk.js": "/static/js/2.d527b075.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.b8afce5e.chunk.js": "/static/js/3.b8afce5e.chunk.js",
     "static/js/3.b8afce5e.chunk.js.map": "/static/js/3.b8afce5e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.dd53a8bf.chunk.css.map": "/static/css/main.dd53a8bf.chunk.css.map",
+    "static/css/main.3b3cdbc0.chunk.css.map": "/static/css/main.3b3cdbc0.chunk.css.map",
     "static/js/2.d527b075.chunk.js.LICENSE.txt": "/static/js/2.d527b075.chunk.js.LICENSE.txt",
     "static/media/andromeda-chain.42f10a71.png": "/static/media/andromeda-chain.42f10a71.png",
     "static/media/envelope.ca708b84.png": "/static/media/envelope.ca708b84.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.998d5f0b.js",
     "static/js/2.d527b075.chunk.js",
-    "static/css/main.dd53a8bf.chunk.css",
-    "static/js/main.4d7103ec.chunk.js"
+    "static/css/main.3b3cdbc0.chunk.css",
+    "static/js/main.0cf9d56d.chunk.js"
   ]
 }
